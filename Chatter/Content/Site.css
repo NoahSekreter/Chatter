@@ -1,6 +1,4 @@
 ﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
 }
 
 /* Set padding to keep content from hitting the edges */
@@ -21,4 +19,51 @@ input,
 select,
 textarea {
     max-width: 280px;
+}
+
+/*Added stuff*/
+#banner {
+    width: 100%;
+    overflow: hidden;
+}
+
+#navbar {
+    border: 0;
+    height: 30px;
+}
+
+.navbar-fixed {
+    top: 0;
+    z-index: 100;
+    position: fixed;
+    width: 100%;
+}
+#body-div {
+    top: 0;
+    position: relative;
+    height: 320px;
+}
+
+#firstPanel, #secondPanel {
+    height: 320px;
+    background-size: cover;
+}
+
+#firstPanel {
+    background-image: url('../Images/slam_resized.png');
+}
+
+#secondPanel {
+    background-image: url('../Images/jam_resized.jpg');
+}
+
+@media screen and (max-width: 1200px) {
+    #secondPanel {
+        position: absolute;
+        display: none;
+    }
+}
+
+.main-content{
+    
 }
