@@ -2,10 +2,31 @@
     ViewBag.Title = "Home Page";
 }
 
+
 @* Content *@
+<a href="~/Chats/Create">New Post</a>
 <div class="main-content">
     <div class="row">
-        
+        @*@foreach (var item in )
+        {
+            <div class="col-sm-6 col-md-4">
+                <div class="thumbnail">
+                    <div>
+                        Html.DisplayFor(modelItem => item.ChatMessage)
+                    </div>
+                    <div>
+                        Html.DisplayFor(modelItem => item.UserID)
+                    </div>
+                    <div>
+                        Html.DisplayFor(modelItem => item.TimeStamp)
+                    </div>
+                    <div>
+                        Html.ActionLink("Edit", "Edit", new { id = item.ChatID }) |
+                        Html.ActionLink("Delete", "Delete", new { id = item.ChatID })
+                    </div>
+                </div>
+            </div>
+        }*@
     </div>
 </div>
 <div style="padding-bottom: 1000px;"></div>

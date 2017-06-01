@@ -44,6 +44,10 @@ textarea {
     height: 320px;
 }
 
+.extra-top {
+    padding-top: 65px;
+}
+
 #firstPanel, #secondPanel {
     height: 320px;
     background-size: cover;

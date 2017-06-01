@@ -11,12 +11,18 @@ namespace Chatter.Models
 {
     using System;
     using System.Collections.Generic;
-    
+    using System.ComponentModel.DataAnnotations;
+
     public partial class Chat
     {
         public int ChatID { get; set; }
         public string UserID { get; set; }
         public string ChatMessage { get; set; }
-        public System.DateTime TimeStamp { get; set; }
+        public Nullable<System.DateTime> TimeStamp { get; set; }
+
+        public Chat()
+        {
+            TimeStamp = DateTime.Now;
+        }
     }
 }

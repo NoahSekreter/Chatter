@@ -10,5 +10,13 @@
         if ($(window).scrollTop() < 321) {
             $('#navbar').removeClass('navbar-fixed');
         }
+
+        if ($(window).scrollTop() > 320) {
+            $('#body-div').addClass('extra-top');
+        }
+
+        if ($(window).scrollTop() < 321) {
+            $('#body-div').removeClass('extra-top');
+        }
     });
 });
